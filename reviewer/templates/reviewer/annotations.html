@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annotation Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header, .footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .toolbar {
+            background-color: #f8f9fa;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content {
+            flex: 1;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .status {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #f8f9fa;
+        }
+        .status div {
+            background-color: #ADD8E6; /* LightBlue */
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Annotation Tool</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Annotations</h2>
+            <button>ISU</button>
+            <button>Process Review</button>
+            <button>Notifications</button>
+            <h3>Classes</h3>
+            <ul>
+                <li>model</li>
+                <li>truck</li>
+                <li>bus</li>
+                <li>taxi</li>
+                <li>lens</li>
+            </ul>
+            <h3>Segmentation Type</h3>
+            <ul>
+                <li>Semantic</li>
+                <li>Instance</li>
+                <li>Panoptic</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="toolbar">
+                <button>Browse</button>
+                <div class="actions">
+                    <button>Save</button>
+                    <button>Undo</button>
+                    <button>Redo</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="status">
+                    <div>Unannotated</div>
+                    <div>In Review</div>
+                    <div>Rework</div>
+                    <div>Finished</div>
+                    <div>Issues</div>
+                </div>
+                <div class="image-container">
+                    <img src="/mnt/data/image.png" alt="Annotation Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Username | Email or Mobile Phone</p>
+    </div>
+</body>
+</html>

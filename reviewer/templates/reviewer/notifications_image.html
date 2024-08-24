@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trisakti Reviewer Notifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #004080;
+            color: white;
+            text-align: left;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            float: left;
+            width: 20%;
+            background-color: #e6e6e6;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #003366;
+            display: block;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .sidebar ul li a:hover {
+            background-color: #ddd;
+        }
+        .main-content {
+            float: right;
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .notifications h2 {
+            margin-top: 0;
+        }
+        .notifications table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .notifications th, .notifications td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .notifications th {
+            background-color: #f2f2f2;
+        }
+        .unannotated {
+            background-color: #ffe5e5;
+            color: #ff0000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+        }
+        .navigation {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .navigation button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="path/to/logo.png" alt="Logo">
+            <h1>Trisakti_Reviewer</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">In Review</a></li>
+            </ul>
+            <img src="https://via.placeholder.com/30" alt="User Avatar">
+            <p>username</p>
+            <p>email or mobile phone</p>
+        </div>
+        <div class="main-content">
+            <div class="notifications">
+                <h2>Notifications</h2>
+                <p>In Review (300 images)</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image ID</th>
+                            <th>Workflow Status</th>
+                            <th>Label Time</th>
+                            <th>Review Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>1.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>4.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>5.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>6.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>7.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>8.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>9.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>10.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>11.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>12.jpg</td>
+                            <td><span class="unannotated">Unannotated</span></td>
+                            <td>0s</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="navigation">
+                <button>Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

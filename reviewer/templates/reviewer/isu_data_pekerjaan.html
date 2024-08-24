@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Review Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #004080;
+            color: white;
+            text-align: left;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .toolbar {
+            background-color: #f8f9fa;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content {
+            flex: 1;
+            padding: 10px;
+            background-color: #fff;
+            overflow-y: auto;
+        }
+        .table-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+        .status-links a {
+            margin-right: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .status-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="path/to/logo.png" alt="Logo">
+            <h1>Trisakti_Reviewer</h1>
+        </div>
+        <div>Username | Email or Mobile Phone</div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <button>ISU</button>
+            <button>Process Review</button>
+            <button>Notifications</button>
+        </div>
+        <div class="main">
+            <div class="toolbar">
+                <input type="text" placeholder="Search Data">
+                <select>
+                    <option>Status</option>
+                    <option>Done</option>
+                    <option>Drop</option>
+                </select>
+            </div>
+            <div class="content">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID_Data</th>
+                                <th>User</th>
+                                <th>ISU</th>
+                                <th>Proses</th>
+                                <th>Tanggal</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Data_1</td>
+                                <td><a href="mailto:Accounts@gmail.com">Accounts@gmail.com</a></td>
+                                <td>4 Isu</td>
+                                <td><a href="#">Review</a></td>
+                                <td>02/01/24</td>
+                                <td class="status-links"><a href="#">Drop</a> / <a href="#">Done</a></td>
+                            </tr>
+                            <tr>
+                                <td>Data_2</td>
+                                <td><a href="mailto:Accounts@gmail.com">Accounts@gmail.com</a></td>
+                                <td>3 Isu</td>
+                                <td><a href="#">Review</a></td>
+                                <td>05/04/24</td>
+                                <td class="status-links"><a href="#">Drop</a> / <a href="#">Done</a></td>
+                            </tr>
+                            <!-- Additional rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

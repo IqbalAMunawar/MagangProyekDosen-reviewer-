@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+<style>
+    .MENU {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.MENU .div {
+  background-color: #ffffff;
+  width: 2055px;
+  height: 1080px;
+  position: relative;
+}
+
+.MENU .overlap {
+  position: absolute;
+  width: 1997px;
+  height: 88px;
+  top: 4px;
+  left: 0;
+  background-color: #054484;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.MENU .group {
+  position: relative;
+  width: 270px;
+  height: 60px;
+  top: 7px;
+  left: 69px;
+}
+
+.MENU .image {
+  position: absolute;
+  width: 70px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+
+.MENU .text-wrapper {
+  position: absolute;
+  height: 20px;
+  top: 25px;
+  left: 82px;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-2 {
+  position: absolute;
+  height: 20px;
+  top: 123px;
+  left: 366px;
+  font-size: 32px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .group-2 {
+  position: absolute;
+  width: 1658px;
+  height: 211px;
+  top: 160px;
+  left: 347px;
+}
+
+.MENU .div-2 {
+  position: absolute;
+  width: 1660px;
+  height: 52px;
+  top: 0;
+  left: 0;
+}
+
+.MENU .overlap-group {
+  position: relative;
+  width: 1650px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 7px 7px 0px 0px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-color: #000000;
+}
+
+.MENU .text-wrapper-3 {
+  left: 18px;
+  position: absolute;
+  height: 20px;
+  top: 15px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-4 {
+  left: 322px;
+  position: absolute;
+  height: 20px;
+  top: 15px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-5 {
+  top: 14px;
+  left: 762px;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-6 {
+  position: absolute;
+  height: 20px;
+  top: 15px;
+  left: 1128px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-7 {
+  position: absolute;
+  height: 20px;
+  top: 20px;
+  left: 1278px;
+  font-size: 14px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-8 {
+  top: 21px;
+  left: 936px;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .overlap-2 {
+  position: absolute;
+  width: 1660px;
+  height: 53px;
+  top: 52px;
+  left: 0;
+}
+
+.MENU .div-wrapper {
+  position: absolute;
+  width: 1660px;
+  height: 53px;
+  top: 0;
+  left: 0;
+}
+
+.MENU .div-3 {
+  position: relative;
+  width: 1650px;
+  height: 53px;
+  background-color: #ffffff;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-color: #000000;
+}
+
+.MENU .text-wrapper-9 {
+  top: 16px;
+  left: 730px;
+  color: #000000;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-10 {
+  top: 15px;
+  left: 1122px;
+  color: #000000;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-11 {
+  top: 15px;
+  left: 1278px;
+  color: #118cff;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-12 {
+  top: 17px;
+  left: 945px;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .overlap-3 {
+  position: absolute;
+  width: 1660px;
+  height: 53px;
+  top: 105px;
+  left: 0;
+}
+
+.MENU .text-wrapper-13 {
+  top: 16px;
+  position: absolute;
+  height: 20px;
+  left: 1278px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #118cff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-14 {
+  top: 20px;
+  left: 730px;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-15 {
+  top: 16px;
+  left: 946px;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .overlap-4 {
+  position: absolute;
+  width: 1660px;
+  height: 53px;
+  top: 158px;
+  left: 0;
+}
+
+.MENU .overlap-5 {
+  position: relative;
+  width: 1650px;
+  height: 53px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 7px 7px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.MENU .text-wrapper-16 {
+  top: 10px;
+  position: absolute;
+  height: 20px;
+  left: 1278px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #118cff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-17 {
+  top: 16px;
+  left: 735px;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-18 {
+  top: 21px;
+  left: 950px;
+  position: absolute;
+  height: 20px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .group-3 {
+  position: absolute;
+  width: 239px;
+  height: 872px;
+  top: 96px;
+  left: 105px;
+  background-color: #ffffff;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-color: #000000;
+}
+
+.MENU .frame {
+  height: 38px;
+  top: 13px;
+  display: flex;
+  width: 190px;
+  align-items: center;
+  gap: 9px;
+  padding: 0px 10px;
+  position: absolute;
+  left: 17px;
+  border-radius: 7px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.MENU .arcticons-flashlight {
+  position: relative;
+  width: 29px;
+  height: 34px;
+}
+
+.MENU .text-wrapper-19 {
+  position: relative;
+  width: fit-content;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .frame-2 {
+  height: 38px;
+  top: 52px;
+  display: flex;
+  width: 190px;
+  align-items: center;
+  gap: 9px;
+  padding: 0px 10px;
+  position: absolute;
+  left: 17px;
+  border-radius: 7px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.MENU .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.MENU .text-wrapper-20 {
+  position: relative;
+  width: fit-content;
+  font-size: 16px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .frame-3 {
+  height: 38px;
+  top: 91px;
+  display: flex;
+  width: 190px;
+  align-items: center;
+  gap: 9px;
+  padding: 0px 10px;
+  position: absolute;
+  left: 17px;
+  border-radius: 7px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.MENU .group-wrapper {
+  position: absolute;
+  width: 203px;
+  height: 44px;
+  top: 816px;
+  left: 17px;
+  border-radius: 7px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.MENU .group-4 {
+  position: relative;
+  width: 196px;
+  height: 35px;
+  top: 3px;
+  left: 1px;
+}
+
+.MENU .mdi-user-circle {
+  position: absolute;
+  width: 48px;
+  height: 35px;
+  top: 0;
+  left: 0;
+}
+
+.MENU .overlap-group-2 {
+  position: absolute;
+  width: 142px;
+  height: 33px;
+  top: 0;
+  left: 49px;
+}
+
+.MENU .text-wrapper-21 {
+  position: absolute;
+  width: 75px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.MENU .text-wrapper-22 {
+  position: absolute;
+  width: 142px;
+  height: 18px;
+  top: 16px;
+  left: 0;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+</style>
+  </head>
+  <body>
+    <div class="MENU">
+      <div class="div">
+        <div class="overlap">
+          <div class="group">
+            <img class="image" src="../image/image.png" />
+            <div class="text-wrapper">Trisakt_Reviewer</div>
+          </div>
+        </div>
+        <div class="text-wrapper-2">Notifications</div>
+        <div class="group-2">
+          <div class="div-2">
+            <div class="div-2">
+              <div class="overlap-group">
+                <div class="text-wrapper-3">Task ID</div>
+                <div class="text-wrapper-4">Task name</div>
+                <div class="text-wrapper-5">Time</div>
+                <div class="text-wrapper-6">By</div>
+                <div class="text-wrapper-7">Proses</div>
+              </div>
+            </div>
+            <div class="text-wrapper-8">Time remaining</div>
+          </div>
+          <div class="overlap-2">
+            <div class="div-wrapper">
+              <div class="div-3">
+                <div class="text-wrapper-3">1234567112345544523234</div>
+                <div class="text-wrapper-4">Annotate project: dataset_kendaraan</div>
+                <div class="text-wrapper-9">30 minutes ago</div>
+                <div class="text-wrapper-10">Annotator</div>
+                <div class="text-wrapper-11"><a href="#" style="color: #118DFF;">Review</a></div>
+              </div>
+            </div>
+            <div class="text-wrapper-12">0 hours left</div>
+          </div>
+          <div class="overlap-3">
+            <div class="div-wrapper">
+              <div class="div-3">
+                <div class="text-wrapper-13"><a href="https://i.pinimg.com/originals/0b/22/6d/0b226d9d2ca476251aa808e56ea16005.jpg" style="color: #118DFF;">Review</a></div>
+                <div class="text-wrapper-3">23w434542234er45rtrd423</div>
+                <div class="text-wrapper-4">Annotate project: dataset_buah</div>
+                <div class="text-wrapper-14">10 minutes ago</div>
+                <div class="text-wrapper-6">Annotator</div>
+              </div>
+            </div>
+            <div class="text-wrapper-15">12 hours left</div>
+          </div>
+          <div class="overlap-4">
+            <div class="div-wrapper">
+              <div class="overlap-5">
+                <div class="text-wrapper-16"><a href="#" style="color: #118DFF;">Review</a></div>
+                <div class="text-wrapper-3">21wada1223es3434123354</div>
+                <div class="text-wrapper-4">Annotate project: dataset_hewan</div>
+                <div class="text-wrapper-17">1 minutes ago</div>
+                <div class="text-wrapper-6">Annotator</div>
+              </div>
+            </div>
+            <div class="text-wrapper-18">0 hours left</div>
+          </div>
+        </div>
+        <div class="group-3">
+          <div class="frame">
+            <img class="arcticons-flashlight" src="../image/isu.png" />
+            <div class="text-wrapper-19">ISU</div>
+          </div>
+          <div class="frame-2">
+            <img class="img" src="../image/process.png" />
+            <div class="text-wrapper-20">Proses Review</div>
+          </div>
+          <div class="frame-3">
+            <img class="img" src="../image/notification.png" />
+            <div class="text-wrapper-20">Notifications</div>
+          </div>
+          <div class="group-wrapper">
+            <div class="group-4">
+              <img class="mdi-user-circle" src="../image/person.png" />
+              <div class="overlap-group-2">
+                <div class="text-wrapper-21">username</div>
+                <div class="text-wrapper-22">email or mobile phone</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
